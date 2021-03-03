@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crud.apps.CrudConfig'
 ]
 
 MIDDLEWARE = [
@@ -77,6 +78,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'USER':'root',
+        'PASSWORD':'mysql',
+        'HOST':'locahost',
+        'PORT':'8000'
     }
 }
 
